@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="webdriver" value="driver1"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="LoginTest.NewTest">
+        <methods>
+          <include name="digit8_mobileNo"/>
+          <include name="digit6_mobileNo"/>
+          <include name="digit2_mobileNo"/>
+          <include name="digit1_mobileNo"/>
+          <include name="digit4_mobileNo"/>
+          <include name="digit10_mobileNo"/>
+          <include name="digit9_mobileNo"/>
+          <include name="digit12_mobileNo"/>
+          <include name="afterTest"/>
+          <include name="digit5_mobileNo"/>
+          <include name="digit3_mobileNo"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- LoginTest.NewTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="LoginTest.NewTest1">
+        <methods>
+          <include name="digit1_mobileNo"/>
+          <include name="digit6_mobileNo"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="digit4_mobileNo"/>
+          <include name="digit5_mobileNo"/>
+          <include name="digit3_mobileNo"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="digit2_mobileNo"/>
+        </methods>
+      </class> <!-- LoginTest.NewTest1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
