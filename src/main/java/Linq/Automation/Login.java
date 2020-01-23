@@ -31,7 +31,7 @@ public class Login {
 	  public void beforeTest(String webdriver) {
 		  driver=GlobleData.getChormeDriver("");
 		  con=GlobleData.getDBcon();
-		  login=GlobleData.getInputData().getLogin();
+//		  login=GlobleData.getInputData().getLogin();
 		  driver.navigate().to(GlobleData.getServer()+"/signin?returnTo=%2Fmylinqs%23LoginDone");   
 	      mob=driver.findElement(By.id("mobile"));
 	      senOtpButton= driver.findElement(By.xpath("//button[text()='RECEIVE OTP']"));

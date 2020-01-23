@@ -1,10 +1,10 @@
-package Linq.Automation;
+package get.data;
 
 import org.testng.annotations.Test;
 
-import staticData.GlobleData;
+import staticData.LoadData;
 
-import org.testng.Assert;
+import java.io.FileNotFoundException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
@@ -14,9 +14,8 @@ public class GetInputDataFile {
   }
   @BeforeMethod
   @Parameters({"fileName"})
-  public void fetch_input_data_in_file(String fileName) {
-	 GlobleData.loadData(fileName);
-	 Assert.assertNotNull(GlobleData.getInputData());
+  public void fetch_input_data_in_file(String fileName) throws FileNotFoundException {
+   LoadData.InputDataByFile(fileName);
   }
 
 }

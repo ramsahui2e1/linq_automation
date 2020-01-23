@@ -15,12 +15,12 @@ public class CloseTest {
   public void beforeTest() {
 	  GlobleData.setChormeDriver(null);
 	  GlobleData.setDBcon(null);
-	  GlobleData.setInputData(null);
+	 // GlobleData.setInputData(null);
 	  GlobleData.setProps(null);
 	  GlobleData.setServer(null);
 	  Assert.assertNull(GlobleData.getChormeDriver());
 	  Assert.assertNull(GlobleData.getDBcon());
-	  Assert.assertNull(GlobleData.getInputData());
+//	  Assert.assertNull(GlobleData.getInputData());
 	  Assert.assertNull(GlobleData.getProps());
 	  Assert.assertNull(GlobleData.getServer());
   }

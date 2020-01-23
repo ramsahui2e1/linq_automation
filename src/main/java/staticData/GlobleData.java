@@ -28,11 +28,7 @@ public class GlobleData {
 	  private static  WebDriver ChormeDriver=null;
 	  private static Properties props=null;
 	  private static String server=null;
-	  private static TestData inputData=null;
 	  private static String ScreenShotDir;
-	public static TestData getInputData() {
-		return inputData;
-	}
 	public static Connection getDBcon() {
 		return DBcon;
 	}
@@ -60,19 +56,19 @@ public class GlobleData {
 	public static void setServer(String server) {
 		GlobleData.server = server;
 	}
-	public static void setInputData(TestData inputData) {
-		GlobleData.inputData = inputData;
-	}
-	public static void loadData(String fileName) {
-		Gson gson = new Gson();
-		try {
-			JsonReader reader = new JsonReader(new FileReader(fileName));
-			inputData=gson.fromJson(reader,TestData.class);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	public static void setInputData(TestData inputData) {
+//		GlobleData.inputData = inputData;
+//	}
+//	public static void loadData(String fileName) {
+//		Gson gson = new Gson();
+//		try {
+//			JsonReader reader = new JsonReader(new FileReader(fileName));
+//			inputData=gson.fromJson(reader,TestData.class);
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 	  public GlobleData(String key) {
 		  props=new Properties();
 		  try {
